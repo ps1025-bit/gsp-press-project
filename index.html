@@ -37,6 +37,20 @@
             border: 1px solid #ccc;
             border-radius: 6px;
         }
+        .row-2 {
+            display: flex;
+            justify-content: center;   /* 가운데 정렬 */
+            align-items: center;
+            gap: 16px;                 /* 사진 간 간격 */
+            margin: 20px 0;
+        }
+
+        .row-2 img {
+            width: 48%;                /* 두 장이 한 줄에 들어가도록 */
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
     </style>
 </head>
 <body>
@@ -171,10 +185,11 @@
             <li>금형 정밀도와 프레스 프레임 강성이 공정 품질에 큰 영향</li>
         </ul>
 
-        <div class="img-box">
-            <img src="press_line.jpg" alt="다단 프레스 라인">
-            <div class="caption">[그림 3] 실제 현장에서 관찰한 다단 프레스 생산 라인 (예시)</div>
+        <div class="row-2">
+            <img src="figue/f7.jpg" alt="공정 사진 1">
+            <img src="figue/f9.jpg" alt="공정 사진 2">
         </div>
+
     </section>
 
     <section id="improve">
