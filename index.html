@@ -24,6 +24,19 @@
         th { background:#f0f0f0; }
         footer { text-align:center; font-size:12px; color:#777; padding:16px 0 24px; }
         code { background:#eee; padding:2px 4px; border-radius:3px; font-size: 13px; }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 23%;    /* 한 줄에 4장 배치 */
+            min-width: 160px; /* 너무 작아지지 않도록 최소 크기 설정 */
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
     </style>
 </head>
 <body>
@@ -119,11 +132,19 @@
             </tr>
         </table>
 
-        <div class="img-box">
-            <img src="process_flow.png" alt="생산 공정 흐름도">
-            <div class="caption">[그림 2] 설계부터 검사 및 출하까지의 전체 공정 흐름</div>
+        <h3>생산 공정 과정 사진</h3>
+
+        <div class="gallery">
+            <img src="figure/f3.png" alt="공정 사진 1">
+            <img src="figure/f4.png" alt="공정 사진 2">
+            <img src="figure/f5.png" alt="공정 사진 3">
+            <img src="figure/f6.jpg" alt="공정 사진 4">
+            <img src="figure/f7.jpg" alt="공정 사진 5">
+            <img src="figure/f8.jpg" alt="공정 사진 6">
+            <img src="figure/f9.jpg" alt="공정 사진 7">
+            <img src="figure/f10.jpg" alt="공정 사진 8">
         </div>
-    </section>
+
 
     <section id="press">
         <h2>4. 재료 및 다단 프레스 가공</h2>
